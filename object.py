@@ -1,6 +1,6 @@
 import cv2
 import tkinter as tk
-from tkinter import filedialog, Label, Button
+from tkinter import filedialog, Label, Button, Frame
 
 # Global variables for file paths
 template_path = ""
@@ -67,26 +67,91 @@ def detect_object():
 # Create Tkinter GUI
 root = tk.Tk()
 root.title("Object Detection in Video")
+root.geometry("700x450")
+root.config(bg="#e8f1f2")
+
+# Create a main frame
+main_frame = Frame(root, bg="#ffffff", padx=30, pady=30, relief="raised", borderwidth=3)
+main_frame.pack(pady=30, padx=30, fill="both", expand=True)
+
+# Title Label
+lbl_title = Label(
+    main_frame, 
+    text="Object Detection Tool", 
+    font=("Segoe UI", 24, "bold"), 
+    bg="#ffffff", 
+    fg="#4a4a4a"
+)
+lbl_title.pack(pady=10)
 
 # Upload template button
-lbl_template_path = Label(root, text="Template: None")
-lbl_template_path.pack()
-btn_upload_template = Button(root, text="Upload Template Image", command=upload_template)
-btn_upload_template.pack()
+lbl_template_path = Label(
+    main_frame, 
+    text="Template: None", 
+    font=("Segoe UI", 12), 
+    bg="#ffffff", 
+    fg="#555555", 
+    anchor="w"
+)
+lbl_template_path.pack(fill="x", pady=5)
+
+btn_upload_template = Button(
+    main_frame, 
+    text="Upload Template Image", 
+    font=("Segoe UI", 14), 
+    command=upload_template, 
+    bg="#007BFF", 
+    fg="white", 
+    relief="groove", 
+    padx=10
+)
+btn_upload_template.pack(pady=5)
 
 # Upload video button
-lbl_video_path = Label(root, text="Video: None")
-lbl_video_path.pack()
-btn_upload_video = Button(root, text="Upload Video", command=upload_video)
-btn_upload_video.pack()
+lbl_video_path = Label(
+    main_frame, 
+    text="Video: None", 
+    font=("Segoe UI", 12), 
+    bg="#ffffff", 
+    fg="#555555", 
+    anchor="w"
+)
+lbl_video_path.pack(fill="x", pady=5)
+
+btn_upload_video = Button(
+    main_frame, 
+    text="Upload Video", 
+    font=("Segoe UI", 14), 
+    command=upload_video, 
+    bg="#28A745", 
+    fg="white", 
+    relief="groove", 
+    padx=10
+)
+btn_upload_video.pack(pady=5)
 
 # Detect button
-btn_detect = Button(root, text="Start Detection", command=detect_object)
-btn_detect.pack()
+btn_detect = Button(
+    main_frame, 
+    text="Start Detection", 
+    font=("Segoe UI", 16, "bold"), 
+    command=detect_object, 
+    bg="#FFC107", 
+    fg="black", 
+    relief="raised", 
+    padx=20
+)
+btn_detect.pack(pady=20)
 
 # Status label
-lbl_status = Label(root, text="", fg="blue")
-lbl_status.pack()
+lbl_status = Label(
+    main_frame, 
+    text="", 
+    font=("Segoe UI", 14), 
+    bg="#ffffff", 
+    fg="blue"
+)
+lbl_status.pack(pady=10)
 
 # Run Tkinter main loop
 root.mainloop()
