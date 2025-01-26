@@ -88,5 +88,5 @@ btn_detect.pack()
 lbl_status = Label(root, text="", fg="blue")
 lbl_status.pack()
 
-# Run Tkinter main loop
+# Run Tkinter main loop 
 root.mainloop()
