@@ -1,14 +1,15 @@
-OBJECT DETECTION USING PYTHON                                                                                                                                                    
-                                                                                                                                                                                      Basic Details
+OBJECT DETECTION USING PYTHON                                                                                                                                                                                                                                                                                                      Basic Details
 
-Team Name: PyHack                                                                                                                                                     Team Members:
+Team Name: PyHack  
+
+Team Members:
 
 Member 1:Aiswarya G - NSS College of Engineering
 Member 2:Anaswara Saligramathil - NSS College of Engineering
 
 Hosted Project Link:
 
-[Add your hosted project link here]
+https://drive.google.com/file/d/1_8zY3u3UKjtQDv-oLLh_UBiYE88rBky7/view?usp=drive_link
 
 Project Description:
 
@@ -22,10 +23,6 @@ The Solution:
 
 We simplify object detection by allowing users to upload a template image and video. The system uses template matching to locate the object in the video. A user-friendly GUI ensures an engaging and straightforward experience for everyone.
 
-Technical Details:
-
-Technologies/Components Used
-
 For Software:
 
 Languages Used: Python
@@ -37,8 +34,6 @@ Libraries Used: OpenCV (for image and video processing)
 Tools Used: Python runtime, File dialog for input
 
 Implementation
-
-For Software:
 
 Installation:
 
@@ -59,14 +54,10 @@ Project Documentation:
 Screenshots
 
 Main GUI
-![Screenshot1](Add screenshot here)Shows the main GUI with buttons to upload files and start detection.
+https://drive.google.com/file/d/1sDwQnQo8BEH7v2CgBZhSvKWDAQ6p-klI/view?usp=drive_link
 
 Detection Status
-![Screenshot2](Add screenshot here)Displays the detection status after processing the video.
-
-Template Matching Output
-![Screenshot3](Add screenshot here)Illustrates the object detection process during video analysis.
-
+https://drive.google.com/file/d/1vnaElHoAGJXbEAxUKqL8U2hTeHrW7e9B/view?usp=drive_link
 
 Team Contributions:
 
